@@ -1,3 +1,13 @@
+"ICLR":
+  url: https://iclr.cc
+  color: "#4b9cd3"
+  logo: iclr.png # drop assets/img/venues/iclr.png to enable
+
+"IROS":
+  url: https://ieee-iros.org
+  color: "#00629b"
+  logo: iros.png # drop assets/img/venues/iros.png to enable
+
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"

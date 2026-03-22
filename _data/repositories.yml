@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - raulsteleac
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - raulsteleac/IARO
+  - uoe-agents/task-assignment-robotic-warehouse
+  - raulsteleac/Speech_Emotion_Recognition

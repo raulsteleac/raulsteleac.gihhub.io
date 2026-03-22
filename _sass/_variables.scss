@@ -25,8 +25,8 @@ $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
 $grey-color: #828282 !default;
-$grey-color-light: color.adjust($grey-color, $lightness: 40%);
-$grey-color-dark: #1c1c1d;
+$grey-color-light: color.adjust($grey-color, $lightness: 50%);
+$grey-color-dark: #0f0f0f;
 $grey-900: #212529;
 
 $white-color: #ffffff !default;
@@ -34,7 +34,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($blue-color-dark, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location
@@ -49,4 +49,4 @@ $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
 
 // Max width default
-$max-content-width: 930px !default;
+$max-content-width: 800px !default;

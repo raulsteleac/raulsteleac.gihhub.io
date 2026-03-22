@@ -5,7 +5,7 @@
 @use "variables" as v;
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 0.25rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -37,17 +37,40 @@
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+
+      .row {
+        align-items: center;
+      }
+      padding: 0.85rem 1rem 0.5rem;
+      border-radius: 4px;
+      background: var(--pub-card-bg);
+      backdrop-filter: blur(4px);
+      border: 1px solid var(--global-divider-color);
+      position: relative;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        background: var(--pub-card-bg-hover);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(129, 140, 248, 0.15);
+      }
 
       .preview {
         display: inline-block;
       }
 
       .abbr {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
 
         abbr {
           display: inline-block;
+          font-size: 1rem;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
@@ -68,11 +91,21 @@
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 600;
+        font-size: 1.15rem;
+        line-height: 1.4;
+        margin-bottom: 0.25rem;
+      }
+
+      .periodical {
+        font-size: 0.88rem;
+        color: var(--global-text-color-light);
+        margin-bottom: 0.25rem;
       }
 
       .author {
         a {
+          color: var(--global-theme-color);
           border-bottom: 1px dashed var(--global-theme-color);
 
           &:hover {
@@ -82,7 +115,8 @@
         }
 
         > em {
-          border-bottom: 1px solid;
+          color: var(--global-theme-color);
+          border-bottom: 1px solid var(--global-theme-color);
           font-style: normal;
         }
 
@@ -99,22 +133,32 @@
       }
 
       .links {
+        margin-bottom: 0;
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          color: var(--global-theme-color);
+          border: 1px solid var(--global-theme-color);
+          background: transparent;
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
+          transition: background 0.2s ease, color 0.2s ease;
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            background: var(--global-theme-color);
+            color: white;
+            text-decoration: none;
           }
         }
         a.award.btn {
           border-color: var(--global-highlight-color);
+          color: var(--global-highlight-color);
+
+          &:hover {
+            background: var(--global-highlight-color);
+            color: white;
+          }
         }
       }
 
@@ -166,7 +210,7 @@
       }
 
       div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
+        border: dashed 1px transparent;
       }
 
       div.abstract.hidden.open {
@@ -174,12 +218,66 @@
       }
     }
     div.award.hidden {
-      border: dashed 1px var(--global-bg-color);
+      border: dashed 1px transparent;
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+.venue-logo-wrapper {
+  text-align: center;
+
+  .venue-logo {
+    width: 100%;
+    max-height: 62px;
+    object-fit: contain;
+    margin-bottom: 0.35rem;
+    border-radius: 4px;
+  }
+}
+
+// IROS logo is white — invert to black in light mode
+:root .venue-logo[data-venue="iros"] {
+  filter: brightness(0);
+}
+
+html[data-theme="dark"] .venue-logo[data-venue="iros"] {
+  filter: none;
+}
+
+// Needs to be scoped inside .publications ol.bibliography li to beat the
+// specificity of the existing `.abbr abbr { color: var(--global-card-bg-color) !important }` rule
+.publications ol.bibliography li {
+  .venue-logo-wrapper abbr {
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 1px dashed var(--global-theme-color) !important;
+    color: var(--global-theme-color) !important;
+
+    a {
+      color: var(--global-theme-color) !important;
+    }
+  }
+
+  &:hover .venue-logo-wrapper abbr {
+    background-color: transparent !important;
+    background-image: linear-gradient(135deg, #0369f1, #38bdf8, #34d399, #2dd4bf, #0369f1) !important;
+    background-size: 300% 300% !important;
+    animation: gradient-ring-shift 4s ease infinite !important;
+    border-color: transparent !important;
+    border-style: solid !important;
+    color: white !important;
+
+    a {
+      color: white !important;
+    }
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .citation,

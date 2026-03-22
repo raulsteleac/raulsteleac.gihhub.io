@@ -45,11 +45,28 @@ a.btncv:hover {
 p.location {
   font-size: 0.7rem;
   white-space: nowrap;
+  color: var(--global-text-color-light);
 }
 
 i.iconlocation {
+  color: var(--global-text-color-light);
+  font-size: 0.75rem;
+}
+
+span.badge-cv-date {
+  display: inline-block;
+  min-width: 75px;
+  padding: 0.2em 0.55em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
   color: var(--global-theme-color);
-  font-size: 0.8rem;
+  background-color: transparent;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 0.2rem;
+  opacity: 0.85;
 }
 
 i.iconinstitution {

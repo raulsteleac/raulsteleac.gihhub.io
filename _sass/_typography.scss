@@ -19,9 +19,37 @@ strong {
   color: var(--global-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 800;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
+
+.post-title {
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+.desc strong {
+  font-weight: 400;
+  font-size: 1.08rem;
+}
+
+.post-title span {
+  color: #000000;
+}
+
 
 table {
   td,

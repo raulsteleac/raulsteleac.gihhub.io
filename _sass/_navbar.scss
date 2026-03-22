@@ -6,14 +6,18 @@
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  border-bottom: 2px dotted var(--global-divider-color);
+  background-color: var(--global-navbar-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
+
 
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
-  background-color: var(--global-bg-color);
+  background-color: var(--global-navbar-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--global-divider-color);
 
   a:not(.active) {
@@ -61,7 +65,7 @@
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
-
+    font-size: 1.05rem;
     &:hover {
       color: var(--global-hover-color);
     }
