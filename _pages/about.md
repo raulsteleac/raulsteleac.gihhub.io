@@ -24,9 +24,9 @@ latest_posts:
 ---
 I am a third-year PhD student in the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), following a Robotics and Autonomous Systems CDT advised by [Mohan Sridharan](https://homepages.inf.ed.ac.uk/msridhar/). I am also a member of [MARBLE](https://edinburgh-rl.github.io/), an interest group with a focus on Reinforcement Learning.
 
-My research interests lie mainly in RL, particularly involing *temporally extended actions* (options, skills, macro-actions, you name it), hierarchical RL, and multi-agent systems. My recent work brings these themes together by focusing on coordinated temporally extended behaviours in multi-agent RL. 
+My research interests lie primarily in RL, with a particular emphasis on *temporally extended actions* (options, skills, macro-actions, you name it), hierarchical RL, and multi-agent systems. My recent work brings these themes together by studying the discovery and reuse of task-agnostic coordinated behaviours in multi-agent RL.
 *I believe coordinated behaviours give agents the strongest head start when it comes to finding better solutions in multi-agent downstream tasks.*
 
 Before starting my PhD, I worked as a Machine Learning Engineer for two years in biomedical drug discovery and finance, and previously as a Junior Software Developer for three years ([professional experience section](#professional-experience)). 
-I hold an MSc in Computing degree from [Imperial College London](https://www.imperial.ac.uk/), with a dedicated specialisation in Artificial Intelligence and Machine Learning ([education section](#education)).
+I hold an MSc in Computing from [Imperial College London](https://www.imperial.ac.uk/), with a dedicated specialisation in Artificial Intelligence and Machine Learning ([education section](#education)).
 
