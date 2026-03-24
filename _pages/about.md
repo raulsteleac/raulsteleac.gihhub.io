@@ -22,7 +22,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-I am a third-year PhD student at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/) and advised by [Mohan Sridharan](https://homepages.inf.ed.ac.uk/msridhar/). I am also a member of [MARBLE](https://edinburgh-rl.github.io/), an interest group with a focus on Reinforcement Learning.
+I am a third-year PhD student at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), following a Robotics and Autonomous Systems CDT advised by [Mohan Sridharan](https://homepages.inf.ed.ac.uk/msridhar/). I am also a member of [MARBLE](https://edinburgh-rl.github.io/), an interest group with a focus on Reinforcement Learning.
 
 My research interests lie primarily in RL, with a particular emphasis on *temporally extended actions* (options, skills, macro-actions, you name it), hierarchical RL, and multi-agent systems. My recent work brings these themes together by studying the discovery and reuse of task-agnostic coordinated behaviours in multi-agent RL.
 *I believe coordinated behaviours give agent teams the strongest head start when it comes to finding better solutions in downstream tasks.*
