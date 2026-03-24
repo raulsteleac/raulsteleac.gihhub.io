@@ -100,7 +100,7 @@ ul.task-list input[type="checkbox"] {
 
     // CV button — distinct teal so it stands out from both grey icons and blue text
     &[title="Cv pdf"] {
-      color: #0d9488;
+      color: #0891b2;
 
       &:hover {
         color: var(--global-hover-color);
@@ -437,8 +437,8 @@ ul.task-list input[type="checkbox"] {
 }
 
 .timeline-org {
-  font-weight: 800;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
   color: var(--global-text-color);
   margin-bottom: 0.1rem;
 
@@ -453,32 +453,48 @@ ul.task-list input[type="checkbox"] {
 }
 
 .timeline-role {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   color: var(--global-theme-color);
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
+
 
 .timeline-date {
   font-size: 0.82rem;
   font-family: monospace;
   color: var(--global-text-color);
   white-space: nowrap;
-  padding: 0.2rem 0.65rem;
-  border-radius: 20px;
+  padding: 0.35rem 0.65rem;
+  border-radius: 10px;
   border: 1px solid var(--global-divider-color);
   background: var(--global-bg-color);
-  flex-shrink: 0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.thesis-label {
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+.thesis-title {
+  color: var(--global-text-color);
+  font-style: italic;
 }
 
 .timeline-desc {
   font-size: 0.875rem;
-  color: var(--global-text-color);
+  color: color-mix(in srgb, var(--global-text-color) 70%, transparent);
   line-height: 1.6;
   margin: 0 0 0.3rem;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &.timeline-desc--thesis {
+    color: var(--global-text-color);
   }
 }
 

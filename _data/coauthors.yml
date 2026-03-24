@@ -5,3 +5,19 @@
 "abel":
   - firstname: ["Dave", "David", "David Abel"]
     url: https://david-abel.github.io/
+
+"krnjaic":
+  - firstname: ["Aleksandar", "Aleksandar Krnjaic"]
+    url: https://scholar.google.com/citations?user=Svz3hfcAAAAJ&hl=en
+
+"papoudakis":
+  - firstname: ["Georgios", "Georgios Papoudakis"]
+    url: https://papoudakis.github.io/
+
+"schafer":
+  - firstname: ["Lukas", "Lukas Schäfer"]
+    url: https://www.lukaschaefer.com/
+
+"albrecht":
+  - firstname: ["Stefano", "Stefano V.", "Stefano V. Albrecht"]
+    url: https://scholar.google.com/citations?user=ceSFqCcAAAAJ&hl=en
