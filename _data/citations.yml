@@ -1,11 +1,11 @@
 metadata:
-  last_updated: '2026-06-03'
+  last_updated: '2026-06-17'
 papers:
   OONVcxgAAAAJ:9yKSN-GCB0IC:
     citations: 0
     title: Inter-Agent Relative Representations for Multi-Agent Option Discovery
     year: Unknown Year
   OONVcxgAAAAJ:d1gkVwhDpl0C:
-    citations: 79
+    citations: 81
     title: Scalable multi-agent reinforcement learning for warehouse logistics with robotic and human co-workers
     year: '2024'
