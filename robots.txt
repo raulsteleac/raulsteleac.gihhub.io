@@ -1,4 +1,5 @@
 User-agent: *
+Allow: /sitemap.xml
+Sitemap: https://raulsteleac.github.io/sitemap.xml
 Disallow:
 
-Sitemap: https://raulsteleac.github.io/sitemap.xml
