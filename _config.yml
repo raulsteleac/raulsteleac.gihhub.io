@@ -13,7 +13,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: 
 keywords:  
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon:   # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://raulsteleac.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -66,7 +66,7 @@ max_width: 1500px
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -183,6 +183,7 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   - bin/
+  - cv_latex/ # CV LaTeX sources — must never be copied into the built site
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile

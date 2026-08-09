@@ -1,4 +1,10 @@
 _site
+# CV LaTeX sources — kept local, never published to the site
+cv_latex/
+*.aux
+*.log
+*.out
+*.synctex.gz
 .bundle
 .DS_store
 .idea
